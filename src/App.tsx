@@ -8,6 +8,7 @@ import { BudgetsView } from './components/BudgetsView';
 import { ChartsView } from './components/ChartsView';
 import { SubscriptionsView } from './components/SubscriptionsView';
 import { InsightsView } from './components/InsightsView';
+import { AiAdvisorView } from './components/AiAdvisorView';
 import { QuickAddModal } from './components/QuickAddModal';
 import { SmsParserModal } from './components/SmsParserModal';
 import { PinLockModal } from './components/PinLockModal';
@@ -81,6 +82,10 @@ const AppContent: React.FC = () => {
 
           {activeTab === 'insights' && (
             <InsightsView />
+          )}
+
+          {activeTab === 'ai' && (
+            <AiAdvisorView />
           )}
         </main>
 

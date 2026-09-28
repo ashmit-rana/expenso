@@ -1,7 +1,7 @@
 import React from 'react';
-import { LayoutDashboard, ReceiptText, Target, PieChart, RefreshCcw, Lightbulb } from 'lucide-react';
+import { LayoutDashboard, ReceiptText, Target, PieChart, RefreshCcw, Lightbulb, Bot } from 'lucide-react';
 
-export type ActiveTab = 'overview' | 'ledger' | 'budgets' | 'charts' | 'subscriptions' | 'insights';
+export type ActiveTab = 'overview' | 'ledger' | 'budgets' | 'charts' | 'subscriptions' | 'insights' | 'ai';
 
 interface NavigationProps {
   activeTab: ActiveTab;
@@ -16,6 +16,7 @@ export const Navigation: React.FC<NavigationProps> = ({ activeTab, onChangeTab }
     { id: 'charts' as ActiveTab, label: 'ANALYTICS & HEATMAP', icon: <PieChart size={14} /> },
     { id: 'subscriptions' as ActiveTab, label: 'SUBSCRIPTIONS', icon: <RefreshCcw size={14} /> },
     { id: 'insights' as ActiveTab, label: 'INSIGHTS', icon: <Lightbulb size={14} /> },
+    { id: 'ai' as ActiveTab, label: 'MUNSHI AI', icon: <Bot size={14} /> },
   ];
 
   return (
