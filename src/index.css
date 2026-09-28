@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #F3EAD7;
+  --color-paper-light: #FAF4E9;
+  --color-paper-dark: #E6D9C0;
+  --color-paper-card: #FFFDF9;
+  --color-ink: #14110F;
+  --color-chili: #E63B2E;
+  --color-marigold: #F5B700;
+  --color-leaf: #1F7A4D;
+  --color-sky: #2563EB;
+  
+  --font-heading: 'Bricolage Grotesque', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+
+  --shadow-brutal-xs: 1.5px 1.5px 0px #14110F;
+  --shadow-brutal-sm: 2px 2px 0px #14110F;
+  --shadow-brutal: 3.5px 3.5px 0px #14110F;
+  --shadow-brutal-lg: 5px 5px 0px #14110F;
+}
+
+body {
+  background-color: #F3EAD7;
+  color: #14110F;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-image: radial-gradient(#14110F 0.55px, transparent 0.55px);
+  background-size: 20px 20px;
+  min-height: 100vh;
+}
+
+.paper-border {
+  border: 2px solid #14110F;
+}
+
+.card-brutal {
+  border: 2px solid #14110F;
+  box-shadow: 3.5px 3.5px 0px #14110F;
+  background-color: #FFFDF9;
+  border-radius: 4px;
+}
+
+.btn-brutal {
+  border: 2px solid #14110F;
+  box-shadow: 3px 3px 0px #14110F;
+  transition: all 0.08s ease-in-out;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.btn-brutal:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #14110F;
+}
+
+.btn-brutal:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #14110F;
+}
+
+.stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.15rem 0.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.65rem;
+  border: 2px solid #14110F;
+  border-radius: 2px;
+  transform: rotate(-1deg);
+  letter-spacing: 0.05em;
+}
+
+/* Custom Scrollbar for neat ledger views */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #E6D9C0;
+  border-left: 2px solid #14110F;
+}
+::-webkit-scrollbar-thumb {
+  background: #14110F;
+  border: 1px solid #FAF4E9;
+}
